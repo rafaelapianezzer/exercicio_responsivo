@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+ 
+}
+
+header {
+    padding: 16px 20px 16px 20px;
+    background-color: rgb(184, 137, 228);
+    color: #fff;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+   max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-a-loja img {
+    max-width: 50%;
+}
+
+section .container {
+    display: flex;
+    padding: 36px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    line-height: 24px;
+    text-align: justify;
+    
+}
+
+.produtos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+    padding-top: 36px;
+}
+  
+  
+main img{
+    max-width: 80%;
+}
+
+main li {
+    list-style: none;
+}
+
+main > h3, p {
+    line-height: 24px;
+}
+
+main button {
+    border-radius: 4px;
+    padding: 8px;
+    background-color:  rgb(184, 137, 228);
+    font-weight: bold;
+    padding-top: 8px;
+    margin-top: 8px;
+    width: 50%;
+}
+
+body {
+    background-color: rgb(251, 230, 248);
+}
+
+
+@media (max-width: 767px) {
+    header nav li {
+      font-size: 16px;
+      margin: auto;
+      ;
+      
+    }
+    .sobre-a-loja img {
+      max-width: 100%;
+    }
+    section .container {
+      flex-direction: column;
+      padding: 24px;
+      text-align: center;
+      gap: 24px;
+      text-align: justify;
+    }
+
+.produtos ul   {
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+   
+    }
+.produtos ul li {
+  padding-bottom: 20px 
+}
+  }
+
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    header nav li {
+      font-size: 20px;
+       margin-left: 12px;
+    }
+
+  }
+  
+  @media (min-width: 1024px) {
+    header nav li {
+      font-size: 24px;
+      margin-left: 16px;
+    }
+
+
+
+
+  }
+  
